@@ -4,7 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Search</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="app">
+      <h1>Поиск осуществляется по имени!</h1>
+
+      <input
+        type="text"
+        id="myInput"
+        placeholder="Поиск по имени"
+        class="input"
+      />
+
+      <div class="main">
+        <div class="div-table-row top">
+          <div class="div-table-col">ID</div>
+          <div class="div-table-col">Name</div>
+          <div class="div-table-col">Username</div>
+          <div class="div-table-col">Email</div>
+          <div class="div-table-col">Address</div>
+        </div>
+        <div class="div-table"></div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
 </html>

@@ -1,0 +1,68 @@
+:root {
+  --green: #009879;
+  --white: #fff;
+}
+
+html {
+  font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  font-size: 20px;
+  text-align: center;
+}
+
+.input {
+  padding: 1rem 2rem;
+  border: 0.2rem solid var(--green);
+  border-radius: 0.5rem;
+}
+
+.main {
+  width: 100%;
+  max-width: 160rem;
+  border: 0.2rem solid var(--green);
+  border-radius: 0.5rem;
+}
+
+.div-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-table-row {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.2rem solid var(--green);
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+.div-table-row:first-child {
+  border-top: none;
+}
+
+.div-table-row:hover {
+  background-color: darken(var(--green), 7%);
+  color: var(--white);
+}
+
+.div-table-row.top .div-table-col {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.div-table-col {
+  padding: 1rem;
+  width: 100%;
+  border-left: 0.2rem solid var(--green);
+  word-break: break-all;
+}
+
+.div-table-col:first-child {
+  border-left: none;
+}
