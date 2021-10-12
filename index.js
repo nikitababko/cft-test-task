@@ -44,23 +44,20 @@ const getData = (arr) => {
   }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+const fetchJSON = () => {
   fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
     .then((json) => getData(json));
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetchJSON();
 });
 
 // Search
 input.addEventListener('input', () => {
-  fetch('https://jsonplaceholder.typicode.com/users')
-    .then((response) => response.json())
-    .then((json) => getData(json));
+  fetchJSON();
 });
-
-/**
- * TODO: Сделать делегирование событий, если нужно
- * TODO: Закомменитровать строки(возможно)
- */
 
 // for (let i = 0; i < 6; i++) {
 //   if (divTableCol[i].textContent.includes(input.value)) {
