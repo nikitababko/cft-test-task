@@ -2,16 +2,10 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
- /* 16px * 62.5 = 10px = 1rem */
+  font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
 }
 h2 {
   font-size: 1.5rem;
-}
-.input {
-  padding: 1rem 2rem;
-  border: 0.2rem solid #009879;
-  border-radius: 0.5rem;
 }
 .app {
   display: flex;
@@ -19,6 +13,11 @@ h2 {
   align-items: center;
   height: 100vh;
   text-align: center;
+}
+.input {
+  padding: 1rem 2rem;
+  border: 0.2rem solid #009879;
+  border-radius: 0.5rem;
 }
 .main {
   width: 100%;
@@ -56,7 +55,7 @@ h2 {
   width: 100%;
   word-break: break-all;
 }
-.test_2 {
+.col-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,30 +63,31 @@ h2 {
   width: 100%;
   border-left: 0.2rem solid #009879;
 }
-.test_2:first-child {
+.col-block:first-child {
   border-left: none;
 }
-.test_2 > div:first-of-type {
+.col-block > div:first-of-type {
   display: none;
   font-weight: bold;
   font-size: 2rem;
 }
+
 @media (max-width: 421px) {
   .div-table-row.top {
     display: none;
- }
+  }
   .div-table-row {
     flex-direction: column;
     border-left: none;
- }
+  }
   .div-table-col {
     border-left: none;
- }
-  .test_2 {
+  }
+  .col-block {
     border-left: none;
- }
-  .test_2 > div:first-of-type {
+  }
+  .col-block > div:first-of-type {
     display: flex;
     border-left: none;
- }
+  }
 }
